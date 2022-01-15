@@ -5,7 +5,6 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
 public class Task2 {
-
 	String input_;
 	String output_;
 	HashMap <String, LinkedList<String>> words;//hashmap with document title (D1, D2 etc) as values and words as keys - inverted index
