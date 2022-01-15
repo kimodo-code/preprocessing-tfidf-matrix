@@ -1,0 +1,20 @@
+Task 3:  
+Write a script or a program that reads a text file containing an inverted index, creates the 
+TF-IDF weights matrix and saves it in a file. 
+Your program should take two parameters: input file name out file name.  
+Input file can be assumed is a representation of an inverted index where each line contains 
+the term and identifiers of documents where that term occurs in. 
+Your output file should contain the weights matrix, document identifiers as the header of 
+each column and terms as the first column.  
+sample in file: (columns will be TAB delimited) 
+sample D1 D2 
+document D1 D2 
+second D2 
+
+ 
+
+sample out file (columns must be TAB delimited) 
+ D1 D2 
+sample 0 0 
+document 0 0 
+second 0 0.301 

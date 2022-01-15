@@ -1,0 +1,25 @@
+Task 1:
+Write a script or a program that reads a text file, pre-processes it and saves 
+the results into a new file. The text file contains documents, one document per line. 
+Each document is one or several sentences. 
+Your program should take three parameters: input file name,  output file name, stopword 
+list  
+It should pre-process documents so that they can be later used to create an inverted index. 
+Basic pre-processing should consider: 
+punctuation 
+tokenization 
+lower-casing/upper-casing / punctuation / numbers 
+stop word removal (sample list will be provided, comma separated list of words) 
+stemming must use one of the Porter stemmer libraries  
+
+ 
+
+Your program should write the pre-processed documents into the output file. 
+sample input file: 
+D1 This is a sample document 
+D2 This is a second document. This one has more sentences. 
+D3 The name of the document is spaced by a TAB character! all docs are on a single line 
+sample output file 
+D1 sample document 
+D2 second document more sentence 
+D3 name document space tab character doc single line 

@@ -1,0 +1,15 @@
+Task 2:
+Write a script or a program that reads a text file of documents, creates an inverted index and saves to file. 
+Your program should take two parameters: input file name and output file name.  
+Input file is made of documents, Each document will have an Identifier/Title  separated from 
+the content by a TAB character. 
+Each line of the output file should contain the term and title of documents that the term 
+occurs in. Each column must be separated by a TAB character.  
+sample RUN:  script2 <infile> <outfile> 
+sample input file:  
+D1 sample document 
+D2 second sample document 
+sample output file: 
+sample D1 D2 
+document D1 D2 
+second D2 

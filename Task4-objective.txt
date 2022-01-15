@@ -1,0 +1,9 @@
+Task 4
+Write a script or a program that reads a text file containing a TF-IDF weights matrix 
+defined in the previous task, and two additional parameters that are documents' identifiers. 
+Your program should return the cosine similarity value of those two documents. 
+
+ 
+
+sample command to run: script weightfile D1 D2 
+sample output:   0.6 
