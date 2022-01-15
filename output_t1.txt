@@ -1,0 +1,5 @@
+documents
+ document singl line document titl separ tab character
+ space confus rest whitespac document tab easier
+ carriag return languag line entity
+ languag insist block text delin carriag return statement 
