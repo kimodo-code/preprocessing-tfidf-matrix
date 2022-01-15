@@ -6,16 +6,11 @@ public class TFIDFCalc {
 	
 	String term = Task3.term;
 	ArrayList<String> doc = Task3.doc;
-	List<List<String>> documentSet = Task3.documentSet;
-	
-	
-	
+	List<List<String>> documentSet = Task3.documentSet;		
 
-		
-
-		//Term Frequency
+	//Term Frequency
 	//take in as arguments the documents and the term that's being counted to calculate term frequency
-
+	
 		    public double tf(List<String> doc, String term) {//document as array list, term as string
 		        double freqij = 0;//the term frequency, the number of times the term occurs in the document
 		        for (String word : doc) {//word and term are synonymous
@@ -24,11 +19,9 @@ public class TFIDFCalc {
 		        }
 		        return freqij / doc.size();//freq of term i in document j/max frequency j is the formula for tf
 		    }
-
-		   
+   
 		     //"documentSet" list of list of strings represents the document set
-		   
-		    
+			    
 		    //Inverse document Frequency
 		    public double idf(List<List<String>> documentSet, String term) {//take in the whole document set and the term string
 		        double n = 0;//n = number of documents that contain term
@@ -42,26 +35,12 @@ public class TFIDFCalc {
 		        }
 		        return Math.log(documentSet.size() / n);//log of the total number of documents over the number of documents that contain term
 		    }
-
 		    
 		     //"doc" = a text document
-		     //"documentSet" = all documents
-		
+		     //"documentSet" = all documents		
 		    
 		    //TF-IDF
 		    public double tfIdf(List<String> doc, List<List<String>> documentSet, String term) {
 		        return tf(doc, term) * idf(documentSet, term);//the td-idf weight for a term is calculated by multiplying the tf for that document by its idf score
-
-		
-		 
+		    	}
 		    }
-
-
-		 
-
-		    }
-
-	
-
-
-
